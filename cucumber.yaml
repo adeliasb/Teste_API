@@ -1,0 +1,12 @@
+---
+default: -p bdd -p html -p chrome_headless
+ci: -p dot -p json -p remote_headless
+json: --format json --out=log/features.json
+dot: --format progress
+html: --format html --out=log/features.html
+remote_headless: BROWSER=remote_headless
+bdd: --format pretty
+headless: BROWSER=headless
+chrome_headless: BROWSER=chrome_headless
+local: --profile base ENVIRONMENT=local
+base: --no-source --color --format pretty

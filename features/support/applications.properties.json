@@ -1,0 +1,17 @@
+{
+    "applications": {
+        "TRELLO" : {
+            "base_url": "https://api.trello.com/1",
+            "uri.add_board": "/boards/?name=name&defaultLabels=true&defaultLists=true&keepFromSource=none&prefs_permissionLevel=private&prefs_voting=disabled&prefs_comments=members&prefs_invitations=members&prefs_selfJoin=true&prefs_cardCovers=true&prefs_background=blue&prefs_cardAging=regular&key=yourApiKey&token=yourApiToken",
+            "uri.rename_card": "/cards/id?name=name&key=yourApiKey&token=yourApiToken",
+            "uri.add_list": "/lists?name=name&idBoard=idBoard&key=yourApiKey&token=yourApiToken",
+            "uri.add_card": "/cards?name=name&idList=idList&keepFromSource=all&key=yourApiKey&token=yourApiToken",
+            "uri.move_card": "/cards/id?idList&key=yourApiKey&token=yourApiToken",
+            "uri.delete_board": "/boards/id?key=yourApiKey&token=yourApiToken",
+            "uri.get_properties": "/application/properties"
+        },
+        "contentType": {
+            "json": "application/json"
+        }
+    }
+}
